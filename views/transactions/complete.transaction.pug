@@ -1,0 +1,10 @@
+h1 Update State
+
+form(action='/transactions/'+transaction.id+'/complete', method='POST')
+  label Choose status:
+    select(name="status")
+      option None
+      option Complete
+    br
+    br
+    button(type='submit', style='width:100px; height:30px') Update
